@@ -1,0 +1,53 @@
+
+.wrapper{
+    width:100%;
+    background-color: rgb(77, 82, 87);
+    padding: 5%;
+}
+
+#content{
+    margin: auto;
+    width: 60%;
+    font-size: 30px;
+    padding: 2%;
+    border-radius: 3px solid black;
+    box-shadow: 2px sandybrown;
+}
+.label{
+    margin: 2%;
+    margin-right: 0;
+    width: 49%;
+    float: left;
+}
+
+.input{
+    width: 49%;
+    float: right;
+}
+
+.labelbutton button{
+    width: 30%;
+    font-size: 30px;
+    margin:0 20%;
+    border: 2px solid black;
+    padding: 1%;
+    color:black;
+    font-weight: 500;
+}
+
+#output{
+    padding: 5%;
+}
+
+#output table{
+    background-color: rgb(134, 160, 73);
+    padding: 2%;
+    margin:auto;
+    font-size: 20px;
+}
+
+table th,td{
+    border-bottom: 2px solid rgb(2, 44, 16);
+    text-align: center;
+    width: 30%;
+}
