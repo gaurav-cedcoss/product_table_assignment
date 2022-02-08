@@ -6,7 +6,7 @@ function addProd() {
     let pprice = document.getElementById("prodPrice").value;
 
     if (checkData(pid, pname, pprice)) {
-        datainput(pid, pname, pprice);
+        chkDuplicate(pid, pname, pprice);
         display();
     }
 
@@ -29,7 +29,7 @@ function checkData(pid, pname, pprice) {
 
 }
 
-
+//insert elements in an array
 function datainput(pid, pname, pprice) {
     prodArray.push({
         "id": pid,
@@ -38,8 +38,22 @@ function datainput(pid, pname, pprice) {
     });
 }
 
+//check for the duplicate values
+function chkDuplicate(pid, pname, pprice){
+    if(prodArray.length == 0){
+        datainput(pid,pname,pprice);
+    }
+    else{
+        for(var i=0;i<prodArray.length;i++){
+            if(prodArray[i].id==pid)
+                alert("Id already present!!");
+        }
+    }
+    datainput(pid,pname,pprice);
+}
 
 
+//display in table format
 function display() {
     let result = "";
 
